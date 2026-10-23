@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System;
 
 namespace Domain.Entities;
 
-public class User
+public class Patient
 {
     public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public string LastName { get; set; } = string.Empty;
+    public int Dni { get; set; }
+    public string PhoneNumber { get; set; } = string.Empty;
+    public string ObraSocial { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
-    public string Password { get; set; } = string.Empty;
-    public DateTime CreationDate { get; set; }
 }
